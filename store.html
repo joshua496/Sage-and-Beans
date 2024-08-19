@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sage & Beans Cafe</title>
+  <!--CSS link-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Ruluko&display=swap');
+      </style>
+</head>
+<body>
+  <!--JS link-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <header>
+    <nav class="store">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" width="100px" height="100px" class="d-inline-block align-top" alt="">
+       <p>Sage & Beans cafe</p>
+      </a>
+      </div>
+
+  </header>
+  <main>
+    <div class="card-container">
+        <div class="card">
+          
+          <img src="images/coffee beans.png">
+          <p><h2>Coffee Beans</h2>
+          <p>₱ 150.00</p>
+        </div>
+      
+        <div class="card">
+          <img src="images/espreso.png">
+          <h2>Espresso</h2>
+          <p>₱ 80.00</p>
+        </div>
+      
+        <div class="card">
+          <img src="images/cappuccino.png">
+          <h2>Cappuccino</h2>
+          <p>₱ 95.00</p>
+        </div>
+      
+        <div class="card">
+          <img src="images/iced coffee.png">
+          <h2>Iced Coffee</h2>
+          <p>₱ 70.00</p>
+        </div>
+  </main>
+  <div class="form">
+    <form action="store.php" method="POST">
+    <h3><p><label for="lang">Select your Coffee:</label>
+      <p><select class="form-control" name="coffees[]" id="cafe"></p>
+      <option value="150" name="coffeebeans">Coffe Beans</option>
+      <option value="80" name="espresso">Espresso</option>
+      <option value="95" name="cappuccino">Cappuccino</option>
+      <option value="70" name="icedcoffee">Iced Coffee</option>
+    </select>
+    </p></h3>
+    <p><label class="sr-only">Enter how much you want: </label><input type="number" name="cquan" ></p>
+    <p><label>Enter Payment: ₱</label><input type="number" name="cpay" ></p>
+<br><br>
+<p><input type="submit"  class="btn btn-success" value="SUBMIT"></p>
+  </div>
+</form>
+</body>
+</html>

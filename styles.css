@@ -1,0 +1,200 @@
+body {
+  background-color: #cbd5c0;
+    color: black;
+    font-family: 'Ruluko', sans-serif;
+}
+p {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+
+nav{
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  top: 0px;
+  background-color: #849772;
+}
+.sticky-top{
+  position:fixed;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+
+
+
+.name{
+  display:grid;
+  box-sizing: border-box;
+  background-color:#81917157;
+  height: 500px;
+  width: 100vw;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-content: center;
+  position: relative;
+  isolation: isolate;
+  
+}
+.name::after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.row-heading
+{
+  font-size:1.3rem;
+  font-weight:bold;
+}
+.total
+{
+  font-size:2rem;
+  font-weight:bold;
+}
+.total-val
+{
+  font-size:2rem;
+
+}
+.name p{
+  text-align: center;
+  color:white;
+}
+.name h1{
+  color:white;
+ padding-top: 20px;
+ text-align: center;
+}
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  #Products h1{
+    text-align: center;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    transition: 0.3s;
+    background-color: #9caf88;
+    position: static;
+  }
+  
+  .card h2 {
+    color: #333;
+  }
+  
+  .card p {
+    color: black;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .about{
+    display:grid;
+  box-sizing: border-box;
+  background-color:#81917157;
+  height: 500px;
+  width: 100vw;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  place-content: center;
+  position: relative;
+  isolation: isolate;
+  color:white;
+    
+  }
+  .about::after{
+    content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(images/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.3;
+  }
+  #About p{
+    
+    text-align: center;
+  }
+  #About h1{
+    text-align: center;
+    
+  }
+  #Contacts h1{
+    text-align: center;
+  }
+  #Contacts{
+    background-color: #5d704b;
+  }
+  .contacts{
+    box-sizing: border-box;
+    background-color: #849772;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+   .profile{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    transition: 0.3s;
+    background-color: #9caf88;
+   }
+  
+   .profile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.profile img{
+  height: 250px;
+  border-radius: 50%; 
+}
+
+select,option{
+  text-align: center;
+ 
+}
+.form {
+ text-align: center;
+}
+.form label{
+  text-align: center;
+}
